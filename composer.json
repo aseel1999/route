@@ -1,0 +1,44 @@
+{
+    "name": "lava/magmacore",
+    "description": "A simple PHP framework for building web application",
+    "keywords": ["framework", "php", "magmacore"],
+    "type": "library",
+    "license": "MIT",
+    "readme": "",
+    "time": "",
+    "support":{
+        "issues": "https://github.com/TheCodingWorkshop/MagmaCore/issues",
+        "source": "https://github.com/TheCodingWorkshop/MagmaCore",
+        "wiki": "https://github.com/TheCodingWorkshop/MagmaCore/wiki"
+    },
+    "authors": [
+        {
+            "name": "TheCodingWorkshop",
+            "email": "riccodingworkshop@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "php": "7.4.12|^8.0",
+        "ext-mbstring": "*",
+        "ext-iconv": "*",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-simplexml": "*",
+        "twig/twig": "^3.1",
+        "symfony/http-foundation": "^5.2@RC",
+        "symfony/yaml": "^5.2@RC"
+    },
+    "autoload": {
+        "psr-4": {
+            "Magma\\": "src/Magma"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "Magma\\Tests\\": "tests/"
+        }
+    }
+}
